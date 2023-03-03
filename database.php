@@ -1,12 +1,7 @@
 <?php
-
-$hostName = "localhost";
-$dbUser = "root";
-$dbPassword = "";
-$dbName = "project";
-$conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
+$conn =new mysqli('localhost','root', '' ,'project');
 if (!$conn) {
-    die("Something went wrong;");
+    die("Couldnot connect to the database");
 }
 
 ?>
