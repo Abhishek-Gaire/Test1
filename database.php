@@ -1,7 +1,12 @@
 <?php
-$conn =new mysqli('localhost','root', '' ,'project');
+
+$hostName = "sql112.epizy.com";
+$dbUser = "epiz_33712236";
+$dbPassword = "lq1FtXsipm7a";
+$dbName = "epiz_33712236_project_db";
+$conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
 if (!$conn) {
-    die("Couldnot connect to the database");
+    die("Something went wrong;");
 }
 
 ?>
